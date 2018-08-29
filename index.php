@@ -44,6 +44,8 @@
 		include "cari.php";
 		}elseif($_GET['page']=='readmore'){
 		include "OneBerita.php";
+		}elseif($_GET['page']=='coba'){
+		include "coba.php";
 		}else{
 		include "berita.php";
 		}
