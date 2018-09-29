@@ -24,7 +24,7 @@ if((!empty($judul)) && (!empty($sub) && !empty($isi))){
 	if($fileSize > 0 || $fileError == 0){
 	$move=move_uploaded_file($_FILES['gambar']['tmp_name'],'../gambar/'.$fileName);
 	
-	$up_berita = mysql_query("update berita set judul='$judul',gambar='gambar/$fileName',sub_berita='$sub',isi_berita='$isi' where id_berita='$a'"); 
+	$up_berita = mysqli_query($conn,"update berita set judul='$judul',gambar='gambar/$fileName',sub_berita='$sub',isi_berita='$isi' where id_berita='$a'"); 
 	
 	if($up_berita) {
 	 echo "<script>

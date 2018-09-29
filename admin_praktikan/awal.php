@@ -8,18 +8,18 @@
 <body>
 <?php 
 session_start();
+include ("../koneksi.php");
 $user = $_POST['user']; 
 $pass = $_POST['pass'];
-include ("../koneksi.php");
 
 $query = "select * from praktikan where npm='$user' AND pass_prak='$pass'"; 
-$hasil = mysql_query($query)or die("Error"); 
-if(mysql_num_rows($hasil) == 1) 
+$hasil = mysqli_query($conn,$query)or die("Error"); 
+if(mysqli_num_rows($hasil) > 0) 
 {
-	$member = mysql_fetch_assoc($hasil);
+	$member = mysqli_fetch_array($hasil);
 	$_SESSION['id']= $member['npm'];
-	$_SESSION['SESS_user'] = $member['user'];
-	$_SESSION['SESS_pass'] = $member['pass'];
+	//$_SESSION['SESS_user'] = $member['user'];
+	$_SESSION['SESS_pass'] = $member['pass_prak'];
 	$_SESSION['SESS_nama'] = $member['nama_prak'];
 	echo"<script>window.location='index.php'</script>";
 

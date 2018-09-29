@@ -25,11 +25,11 @@
   </div>
     <form method="post" action="awal.php">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="username" name="user" id="user" >
+        <input type="text" class="form-control" placeholder="username" name="user" id="user" required>
         <i class="fa fa-user form-control-feedback"></i>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password" name="pass" id="pass" >
+        <input type="password" class="form-control" placeholder="Password" name="pass" id="pass" required>
         <i class="fa fa-lock form-control-feedback"></i>
       </div>
       <div class="row">

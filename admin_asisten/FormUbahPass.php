@@ -10,8 +10,8 @@
 $a=$_GET['id'];
 include ("../koneksi.php");
 
-$b=mysql_query("select*from asisten where id_asis='$a'"); 
-while ($c=mysql_fetch_array($b)){
+$b=mysqli_query($conn,"select*from asisten where id_asis='$a'"); 
+while ($c=mysqli_fetch_array($b)){
 ?>
 <font face="Century Gothic, Chiller, Comic Sans MS">
 <font size="+3"> Ubah Password </font>

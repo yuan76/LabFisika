@@ -3,7 +3,7 @@ $a=$_GET['id'];
 error_reporting(0);
 include ("../koneksi.php");
 $sql="delete from nilai where id_nilai='$a'";
-$query=mysql_query($sql);
+$query=mysqli_query($conn,$sql);
 if ($query)
 	{
 		echo"<script language='javascript'> alert ('Data Berhasil Di hapus');

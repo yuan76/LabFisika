@@ -7,14 +7,16 @@
 
 <body>
 <?php
+session_start();
 echo "<script language='javascript'> 
 		if(confirm('Anda yakin ingin keluar?')){
 		window.location='../index.php';
-		session_destroy();
+		
 		} else {
 		window.location='index.php';
 		}
 	</script>";
+session_destroy();
 ?>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <?php
 include ("../koneksi.php");
 
-$liat=mysql_query("select*from berita");
+$liat=mysqli_query($conn,"select*from berita");
 echo "<table border=1 align=center width=80%>
 	<tr style=background-color:#F8ED23>
 		<td align=center width=120px> Judul </td>
@@ -19,7 +19,7 @@ echo "<table border=1 align=center width=80%>
 		<td align=center width=300px> Isi Berita </td>  
 		<td align=center> Aksi </td>
 	</tr>";
-while ($baris=mysql_fetch_array($liat))
+while ($baris=mysqli_fetch_array($liat))
 echo "<tr>
 		<td align=center> $baris[1] </td>
 		<td align=center><img src='../$baris[2]' width=100 height=95 />  </td>

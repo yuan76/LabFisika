@@ -10,8 +10,8 @@
 $a=$_GET['id'];
 include ("../koneksi.php");
 
-$b=mysql_query("select*from berita where id_berita='$a'"); 
-$c=mysql_fetch_array($b);
+$b=mysqli_query($conn,"select*from berita where id_berita='$a'"); 
+$c=mysqli_fetch_array($b);
 ?>
 <font face="Century Gothic, Chiller, Comic Sans MS">
 <font size="+3"> Ubah Berita </font>

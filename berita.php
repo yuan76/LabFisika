@@ -10,7 +10,7 @@
 <?php
 include 'koneksi.php';
 
-$liat=mysqli_query($conn, "select id_berita,judul,gambar,sub_berita,isi_berita from berita");
+$liat=mysqli_query($conn,"select id_berita,judul,gambar,sub_berita,isi_berita from berita");
 
 while ($baris=mysqli_fetch_array($liat)){
 

@@ -35,7 +35,7 @@ $mod7=strtoupper($mod7);
 $mod8=strtoupper($mod8);
 
 if ((!empty($nama) && !empty($npm)) && (!empty($kelas) && !empty($kelompok))){		
-	$up_jadwal = mysql_query("update jadwal set nama='$nama',npm='$npm',kelas='$kelas',kelompok='$kelompok',shift='$shift',hari='$hari',mod1='$mod1',mod2='$mod2',mod3='$mod3',mod4='$mod4',mod5='$mod5',mod6='$mod6',mod7='$mod7',mod8='$mod8' where id_jadwal='$a'"); 
+	$up_jadwal = mysqli_query($conn,"update jadwal set nama='$nama',npm='$npm',kelas='$kelas',kelompok='$kelompok',shift='$shift',hari='$hari',mod1='$mod1',mod2='$mod2',mod3='$mod3',mod4='$mod4',mod5='$mod5',mod6='$mod6',mod7='$mod7',mod8='$mod8' where id_jadwal='$a'"); 
 	
 	if($up_jadwal) {
 	 echo "<script>

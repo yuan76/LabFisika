@@ -15,9 +15,9 @@ $npm=$_POST['npm'];
 $nama=$_POST['nama'];
 
 if (!empty($nama) && !empty($npm)){		
-	$up_berita = mysql_query("update praktikan set npm='$npm',nama_prak='$nama' where npm='$a'"); 
+	$up_prak = mysqli_query($conn,"update praktikan set npm='$npm',nama_prak='$nama' where npm='$a'"); 
 	
-	if($up_berita) {
+	if($up_prak) {
 	 echo "<script>
 		alert('Data Berhasil Di Ubah');
 		window.location='index.php?page=lihat_prak';

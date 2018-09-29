@@ -1,4 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -8,7 +7,7 @@
 <body>
 <form method="post" action="simpan_jadwal.php" enctype="multipart/form-data">
 <font face="Century Gothic, Chiller, Comic Sans MS">
-<font size="+3"> Tambah Jadwal Praktik</font>
+<font size="+3"> Tambah Jadwal Praktik </font>
 <br />
 <br />
 <font size="+1">
