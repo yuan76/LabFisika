@@ -18,7 +18,7 @@ $ulang=$_POST['ulang'];
 
 if (!empty($ulang) || !empty($pb)) {	
 if ($ulang == $pb) {
-$up_pass = mysql_query("update asisten set pass_asis='$pb' where id_asis='$a'");   
+$up_pass = mysqli_query($conn,"update asisten set pass_asis='$pb' where id_asis='$a'");   
 	if($up_pass) {
 		echo "<script> 
 		alert('Password Berhasil Di Ubah');

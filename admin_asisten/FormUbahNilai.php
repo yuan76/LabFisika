@@ -10,8 +10,8 @@
 $a=$_GET['id'];
 include ("../koneksi.php");
 
-$b=mysql_query("select*from nilai where id_nilai='$a'"); 
-$c=mysql_fetch_array($b);
+$b=mysqli_query($conn,"select*from nilai where id_nilai='$a'"); 
+$c=mysqli_fetch_array($b);
 ?>
 <font face="Century Gothic, Chiller, Comic Sans MS">
 <font size="+3"> Ubah Nilai Praktik </font>

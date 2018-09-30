@@ -22,11 +22,11 @@ body{
 #menu ul li.utama{
 	display:inline-table;	
 }
-/*
+
 #menu ul li.baris{
 	display:block;	
 }
-*/
+
 #menu ul li:hover{
 	background-color:#6440F4;
 }
@@ -45,24 +45,24 @@ body{
 	position:absolute;
 	z-index:2;
 }
-/*
+
 .baris ul{
 	display:none;
 	position:absolute;
 	z-index:2;
 }
-*/
-/*
+
+
 .utama:hover ul{
 	display:block;
 }
 
 .utama ul li{
 	display:block;
-	background-color:#FFFFFF;
+	background-color:#66CCFF;
 	width:180px;
 }
-*/
+
 #isi{
 	min-height:400px;
 	padding-left:125px;

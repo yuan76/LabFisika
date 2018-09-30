@@ -8,14 +8,14 @@
 <body>
 <?php
 error_reporting(0);
+include ("../koneksi.php");
 $npm=$_POST['npm'];
 $nama=$_POST['nama'];
 $password=$_POST['password'];
 $ulang=$_POST['ulang'];
 
 if ($ulang == $password) {
-	if ((!empty($npm) && !empty($nama)) && (!empty($password))){
-		include ("../koneksi.php");
+	if ((!empty($npm) && !empty($nama)) && (!empty($password))){		
 		$query = "INSERT INTO praktikan (npm, nama_prak, pass_prak) VALUES('$npm','$nama','$password')";
 		$hasil = mysqli_query($conn, $query);
 			if ($hasil) {

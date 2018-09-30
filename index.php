@@ -53,7 +53,7 @@
 	</div>
 	</div>
 	<div id="footer">
-		Copyright © Laboratorium Fisika Dasar <?php echo date("Y-m-01") ?> - Yuan
+		Copyright &copy; Laboratorium Fisika Dasar <?php echo date("Y") ?> - Yuanita
 	</div>
 </div>
 </body>

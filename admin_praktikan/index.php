@@ -1,4 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -7,7 +6,7 @@
 </head>
 
 <body>
-<?php error_reporting(0);session_start();echo $_SESSION['SESS_user'];$id=$_SESSION['id']; ?>
+<?php error_reporting(0);session_start();$id=$_SESSION['id']; ?>
 <div id="canvas">
 	<div id="header">
 
@@ -37,7 +36,7 @@
 	</div>
 	</div>
 	<div id="footer">
-		Copyright © Laboratorium Fisika Dasar 2017 - Yuanita Pratiwi
+		Copyright &copy; Laboratorium Fisika Dasar 2017 - Yuanita Pratiwi
 	</div> 
 </div>
 </body>

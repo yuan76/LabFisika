@@ -27,7 +27,7 @@ $mod8=$_POST['mod8'];
 $nama=strtolower($nama);
 
 if ((!empty($nama) && !empty($npm)) && (!empty($kelas) && !empty($kelompok))){		
-	$isi=mysql_query("insert into jadwal (nama,npm,kelas,kelompok,shift,hari,mod1,mod2,mod3,mod4,mod5,mod6,mod7,mod8) values ('$nama','$npm','$kelas','$kelompok','$shift','$hari','$mod1','$mod2','$mod3','$mod4','$mod5','$mod6','$mod7','$mod8')");
+	$isi=mysqli_query($conn,"insert into jadwal (nama,npm,kelas,kelompok,shift,hari,mod1,mod2,mod3,mod4,mod5,mod6,mod7,mod8) values ('$nama','$npm','$kelas','$kelompok','$shift','$hari','$mod1','$mod2','$mod3','$mod4','$mod5','$mod6','$mod7','$mod8')");
 	if($isi){	
 		echo "<script> alert('Data Berhasil Di simpan');
 		window.location='index.php?page=tambah_jadwal'</script>"; 

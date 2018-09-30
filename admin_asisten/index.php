@@ -33,8 +33,8 @@
 				<li class="baris"> <a href="index.php?page=lihat_jadwal"> Lihat Jadwal </a> </li>
 				<li class="baris"> <a href="index.php?page=lihat_berita"> Lihat Berita </a> </li>
 			</ul>
-			</li>
-			<?php error_reporting(0);session_start();echo $_SESSION['SESS_user'];$id=$_SESSION['id']; ?>
+			</li>			
+			<?php error_reporting(0);session_start();$id=$_SESSION['id']; ?>
 			<li class="utama"> <a href="index.php?page=ubah_pass&id=<?php echo $id ;?>"> Ubah Password </a> </li>
 			<li class="utama"> <a href="index.php?page=logout"> Logout </a></li>
 			<li class="utama" style="float:right;"> <a href=""> Hari ini tanggal <script language="JavaScript" type="text/javascript"> document.write(TODAY); </script> </a> </li>

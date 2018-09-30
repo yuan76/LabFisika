@@ -18,7 +18,7 @@ $ulang=$_POST['ulang'];
 
 if (!empty($ulang) || !empty($pb)) {	
 if ($ulang == $pb) {
-$up_pass = mysql_query("update praktikan set pass_prak='$pb' where npm='$a'");   
+$up_pass = mysqli_query($conn,"update praktikan set pass_prak='$pb' where npm='$a'");   
 	if($up_pass) {
 		echo "<script> 
 		alert('Password Berhasil Di Ubah');

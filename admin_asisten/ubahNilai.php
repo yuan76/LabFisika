@@ -22,7 +22,7 @@ $total=$_POST['total'];
 $modul=strtoupper($modul);
 
 if ((!empty($npm) && !empty($modul)) && (!empty($lap_ak) && !empty($total))){		
-$up_nilai = mysql_query("update nilai set npm='$npm',modul='$modul',tgl='$tgl',lap_pen='$lap_pen',tes_pen='$tes_pen',ker='$ker',lap_ak='$lap_ak',nilai_tot='$total' where id_nilai='$a'");
+$up_nilai = mysqli_query($conn,"update nilai set npm='$npm',modul='$modul',tgl='$tgl',lap_pen='$lap_pen',tes_pen='$tes_pen',ker='$ker',lap_ak='$lap_ak',nilai_tot='$total' where id_nilai='$a'");
 	
 	if($up_nilai) {
 	 echo "<script>

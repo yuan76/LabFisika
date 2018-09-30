@@ -14,7 +14,7 @@ $a=$_GET['id'];
 include ("../koneksi.php");
 
 
-$liat=mysql_query("select * from nilai where npm like '$a%'");
+$liat=mysqli_query($conn,"select * from nilai where npm like '$a%'");
 echo "<table border=0 align=center>
 	<tr style=background-color:#FB3C6B;font-size:16px>
 		<td align=center width=70px> Modul </td>
@@ -25,7 +25,7 @@ echo "<table border=0 align=center>
 		<td align=center width=55px> LA </td>
 		<td align=center width=55px> Total </td>
 	</tr>";
-while ($baris=mysql_fetch_array($liat))
+while ($baris=mysqli_fetch_array($liat))
 echo "<tr>
 		<td align=center> $baris[2] </td>
 		<td align=center> $baris[3] </td>

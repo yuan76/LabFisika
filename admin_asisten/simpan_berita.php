@@ -24,7 +24,7 @@ if((!empty($judul)) && (!empty($sub) && !empty($isi))){
 	if($fileSize > 0 || $fileError == 0){
 	$move=move_uploaded_file($_FILES['gambar']['tmp_name'],'../gambar/'.$fileName);
 	
-	$isi=mysql_query("insert into berita (judul,gambar,sub_berita,isi_berita) values ('$judul','gambar/$fileName','$sub','$isi')");
+	$isi=mysqli_query($conn,"insert into berita (judul,gambar,sub_berita,isi_berita) values ('$judul','gambar/$fileName','$sub','$isi')");
 	if($isi){
 		echo "<script> alert('Data Berhasil Di simpan');
 		window.location='index.php?page=tambah_berita'</script>";
